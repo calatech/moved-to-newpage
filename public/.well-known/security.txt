@@ -1,0 +1,5 @@
+Contact: mailto:ict@uoeld.ac.ke
+Contact: mailto:innovation@uoeld.ac.ke
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://innovation-week.uoeld.ac.ke/.well-known/security.txt

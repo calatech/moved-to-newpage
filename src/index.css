@@ -1,7 +1,67 @@
 /* URL IMPORTS (SUCH AS FONT IMPORTS) SHOULD BE KEPT ABOVE TAILWIND IMPORTS - DO NOT DELETE THIS COMMENT */
+@font-face {
+  font-family: 'Roboto Variable';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: local('Roboto Variable'), url('/assets/branding/font/Roboto-VariableFont_wdth,wght.ttf') format('truetype-variations');
+}
+
+@font-face {
+  font-family: 'Roboto Variable';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: local('Roboto Variable Italic'), url('/assets/branding/font/Roboto-Italic-VariableFont_wdth,wght.ttf') format('truetype-variations');
+}
 
 /* PLEASE NOTE: THESE TAILWIND IMPORTS SHOULD NEVER BE DELETED - DO NOT DELETE THIS COMMENT */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 /* DO NOT DELETE THESE TAILWIND IMPORTS, OTHERWISE THE STYLING WILL NOT RENDER AT ALL - DO NOT DELETE THIS COMMENT */
+
+:root {
+  font-family: 'Roboto Variable', Inter, system-ui, -apple-system, sans-serif;
+  background-color: #fefefe;
+  color: #001a3d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, rgba(0, 0, 51, 0.12), transparent 55%),
+    radial-gradient(circle at 20% 20%, rgba(153, 102, 51, 0.08), transparent 45%),
+    #fdfdfd;
+  color: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.brand-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.loop-button {
+  transition: box-shadow 160ms ease, transform 160ms ease;
+}
+
+.loop-button:hover {
+  transform: translateY(-1px);
+}
